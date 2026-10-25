@@ -1,0 +1,5 @@
+# Authorized sellers for all xBitsNL Gaming Android apps (AdMob).
+#
+# Served at https://www.xbitsnlgaming.com/app-ads.txt, the root of the Website field on every
+# Play Store listing (Bazooka Noodles, Kings, Fillomino). One publisher account, so one line.
+google.com, pub-2039263177612685, DIRECT, f08c47fec0942fa0

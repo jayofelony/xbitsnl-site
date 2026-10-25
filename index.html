@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xBitsNL Gaming — small games for Android</title>
+<meta name="description" content="xBitsNL Gaming makes small, polished games for Android: Bazooka Noodles, Kings and Fillomino.">
+<meta property="og:title" content="xBitsNL Gaming">
+<meta property="og:description" content="Small, polished games for Android: Bazooka Noodles, Kings and Fillomino.">
+<meta property="og:type" content="website">
+<link rel="icon" href="bazooka-noodles/assets/icon.png">
+<style>
+  :root {
+    --bg: #14121a;
+    --card: #1e1b27;
+    --line: #2e2a3b;
+    --ink: #ece8f4;
+    --muted: #a39db3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 56px 20px 40px; }
+  header { margin-bottom: 40px; }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; margin: 0 0 10px; letter-spacing: -0.02em; }
+  header p { color: var(--muted); margin: 0; max-width: 34em; }
+  .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .game {
+    display: flex; flex-direction: column; gap: 14px;
+    background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--accent);
+    border-radius: 18px; padding: 22px;
+  }
+  .game .top { display: flex; align-items: center; gap: 14px; }
+  .game img { width: 64px; height: 64px; border-radius: 16px; flex: none; }
+  .game h2 { margin: 0; font-size: 1.3rem; }
+  .game .kind { color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .game p { margin: 0; color: var(--muted); flex: 1; }
+  .game .links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 0.9rem; }
+  .game .links a { color: var(--muted); }
+  .game a.more {
+    display: inline-block; align-self: flex-start; padding: 9px 18px; border-radius: 999px;
+    background: var(--accent); color: #15121a; font-weight: 700; text-decoration: none;
+  }
+  .game a.more:hover, .game a.more:focus-visible { filter: brightness(1.1); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>xBitsNL Gaming</h1>
+    <p>Small, polished games for Android, made in the Netherlands.</p>
+  </header>
+
+  <section class="games" aria-label="Games">
+    <article class="game" style="--accent: #f2739f">
+      <div class="top">
+        <img src="bazooka-noodles/assets/icon.png" width="64" height="64" alt="">
+        <div><div class="kind">Arena action</div><h2>Bazooka Noodles</h2></div>
+      </div>
+      <p>Eat. Grow. Blow them up! A worm arena game with bazookas, grenades and banana bombs.</p>
+      <a class="more" href="bazooka-noodles/">View game</a>
+      <div class="links">
+        <a href="bazooka-noodles/privacy-policy.html">Privacy Policy</a>
+        <a href="bazooka-noodles/terms-of-service.html">Terms of Service</a>
+      </div>
+    </article>
+
+    <article class="game" style="--accent: #f2c24b">
+      <div class="top">
+        <img src="kings/assets/icon.png" width="64" height="64" alt="">
+        <div><div class="kind">Logic puzzle</div><h2>Kings</h2></div>
+      </div>
+      <p>One crown per row, column and colour, with a daily puzzle, streaks and leaderboards.</p>
+      <a class="more" href="kings/">View game</a>
+      <div class="links">
+        <a href="kings/privacy-policy.html">Privacy Policy</a>
+        <a href="kings/terms-of-service.html">Terms of Service</a>
+      </div>
+    </article>
+
+    <article class="game" style="--accent: #8fe3c6">
+      <div class="top">
+        <img src="fillomino/assets/icon.png" width="64" height="64" alt="">
+        <div><div class="kind">Logic puzzle</div><h2>Fillomino</h2></div>
+      </div>
+      <p>Fill the grid with numbers so every block is as big as its number, with a daily puzzle and streaks.</p>
+      <a class="more" href="fillomino/">View game</a>
+      <div class="links">
+        <a href="fillomino/privacy-policy.html">Privacy Policy</a>
+        <a href="fillomino/terms-of-service.html">Terms of Service</a>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    Contact: <a href="mailto:oudshoorn.jeroen@gmail.com">oudshoorn.jeroen@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
