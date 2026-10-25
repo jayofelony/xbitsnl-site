@@ -1,14 +1,18 @@
 # xbitsnlgaming.com
 
-Public site of xBitsNL Gaming, served by GitHub Pages at **https://www.xbitsnlgaming.com/**
-(DNS at Cloudflare: `www` CNAME → `jayofelony.github.io`, apex A/AAAA → GitHub Pages, proxy off).
+Studio site of xBitsNL Gaming, served by GitHub Pages at **https://www.xbitsnlgaming.com/**
+(DNS at Cloudflare, proxy off: `www` CNAME → `jayofelony.github.io`, apex A/AAAA → GitHub Pages).
 
-| Path | Source |
+| Path | Content |
 |---|---|
 | `/` | `index.html`: studio page linking to the games |
-| `/app-ads.txt` | AdMob authorised sellers for every app; must stay at the domain root |
-| `/bazooka-noodles/` | `site/bazooka-noodles/` in the `bazooka-noodles` repo |
-| `/kings/` | `site/` in the `kings` repo |
-| `/fillomino/` | `site/` in the `Fillomino` repo |
+| `/app-ads.txt` | AdMob authorised sellers, one line for every app |
+| `/bazooka-noodles/`, `/kings/`, `/fillomino/` | redirects to the game subdomains (earlier URLs) |
 
-The game folders are copies: change a page in its game repo, then copy it here and push.
+Each game has its own subdomain and Pages repo; the source pages live in `site/` of the game repo.
+
+| Game | URL | Pages repo |
+|---|---|---|
+| Bazooka Noodles | `https://bazooka-noodles.xbitsnlgaming.com/` | `jayofelony/bn-branding` |
+| Kings | `https://kings.xbitsnlgaming.com/` | `jayofelony/kings-privacy` |
+| Fillomino | `https://fillomino.xbitsnlgaming.com/` | `jayofelony/fillomino-privacy` |
