@@ -1,0 +1,8 @@
+# https://www.rfc-editor.org/rfc/rfc9309
+User-agent: *
+Allow: /
+Disallow: /bazooka-noodles/
+Disallow: /kings/
+Disallow: /fillomino/
+
+Sitemap: https://www.xbitsnlgaming.com/sitemap.xml
